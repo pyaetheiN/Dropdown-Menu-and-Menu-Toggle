@@ -11,12 +11,22 @@ navMenu.addEventListener('click', () => {
 
 // Bedimcode 11:30min
 
-// const dropdown = document.querySelectorAll('.dropdown'),
-// dropdownContainer = document.querySelectorAll('.dropdown__container');
 
-// function linkAction() {
-//   dropdownContainer.forEach(n => n.classList.remove('active'));
-//   this.classList.add('active');
-// }
 
-// dropdown.forEach(n => n.addEventListener('click', linkAction));
+
+
+
+// ===== test ===== \\
+const navLink = document.querySelectorAll('.nav__link');
+
+navLink.forEach(n => n.addEventListener('click', () => {
+  n.classList.toggle('active');
+
+  const dropdownContainer = n.nextElementSibling;
+  
+  if (n.classList.contains('active')) {
+    dropdownContainer.classList.add('active');
+  } else {
+    dropdownContainer.classList.remove('active');
+  }
+}))

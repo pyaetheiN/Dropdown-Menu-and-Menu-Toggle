@@ -47,9 +47,9 @@ header{
 .dropdown__container.active{
   display: block;
 }
-.dropdown:hover .dropdown__container{
+/* .dropdown:hover .dropdown__container{
   display: block;
-}
+} */
 .nav__menu{
   color: rgba(255, 255, 255, 0.907);
   font-size: 1.8em;
@@ -98,5 +98,3 @@ header{
     padding: 1em 1.5em; 
   }
 }
-
-
